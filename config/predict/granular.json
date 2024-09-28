@@ -1,0 +1,33 @@
+{
+    "gs":{
+        "eval": true,
+        "is_blender": true,
+        "timenet": true, 
+        "test_iterations": [5000, 6000, 7000],
+        "save_iterations": [7000,10000,20000,30000,40000],
+        "quiet": false,
+        "reg_scale": true,
+        "iteration": 40000,
+        "train_frames": 14
+    },
+    "physics":{
+        "view_id": 0,
+        "origin_bg": true,
+        "mat_params":{
+            "material": 13,
+            "friction_alpha": 40.0,
+            "E": 1e5,
+            "nu": 0.1
+        },
+        "vel": [0.0, 0.0, 0.0],
+        "predict_frames":48,
+        "mpm_iter_cnt": 200,
+        "voxel_size": 0.02,
+        "rho": 1000,
+        "fps": 24,
+        "gravity": [0,-9.8,0],
+        "bc": {
+            "ground":[[0, 0.0, 0], [0, 1, 0], 0]
+        }
+    }
+}
